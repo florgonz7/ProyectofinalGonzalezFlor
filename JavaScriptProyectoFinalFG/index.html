@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--SEO-->
+        <meta charset="UTF-8"> 
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Descubre nuestra tienda online de plantas japonesas en Uruguay. Encuentra una amplia selección de hermosas plantas japonesas, ¡Embellece tu hogar con la elegancia y tranquilidad de la naturaleza japonesa!">
+        <meta name="keywords" content="plantas japonesas, tienda de plantas, naturaleza, belleza, armonía, serenidad, legado familiar, Uruguay">
+
+        <!--Links de Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+        <!--Links de estilos propios-->
+        <link href="./css/style.css" rel="stylesheet">
+
+        <!--icono-->
+        <link rel="icon" href="./img/logoPaginas.png">
+
+        <!--titulo-->
+        <title>KAWAII</title>
+    </head>
+    <body>
+        <header class="header">
+            <!-- HEADER -->
+            <nav>
+                <ul class="header__nav--links1 listaheader">
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/tiendas.html">Tiendas</a></li>
+                </ul>
+                <a href="./index.html"><p class="header__nav--logo">KAWAII | かわいい</p></a>
+
+                <ul class="listaheader">
+                    <li class="links2"><img src="./img/header/perfil2.png" alt="perfil" id="header-img1"></li>
+                    <li class="links2"><a href="./pages/carrito.html"><img src="./img/header/carrito2.png" alt="carrito" id="header-img2"></a></li>
+                    <li class="links2"><a href="./pages/favoritos.html"><img src="./img/header/favorito2.png" alt="favorito" id="header-img3"></a></li>
+                </ul>
+            </nav>
+            <div class="banner">
+                <div>
+                    <p class="banner__letras">Jardín japonés en casa</p>
+                    <p class="banner__desc">¡Encuentra la armonía natural en cada rincón, vive la belleza japonesa en tu hogar con nuestras plantas exquisitas!</p>
+                </div>
+                <div class="banner__img">
+                    <img src="./img/header/bplanta.png" alt="planta logo">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <!-- GALERIA -->
+            <section class="main__ig">
+                <p>SEGUINOS EN</p>
+                <span class="logoInstagram">Instagram</span>
+            </section>
+
+            <section class="main__galeria">
+                <img src="./img/galeria/galeria1.jpg" alt="Tienda de plantas">
+                <img src="./img/galeria/galeria2.jpg" alt="Joven con una planta">
+                <img src="./img/galeria/galeria3.jpg" alt="Gato naranja, mascota al lado de una maceta">
+                <img src="./img/galeria/galeria4.jpg" alt="Señora con una planta">
+                <img src="./img/galeria/galeria5.jpg" alt="dos personas observando las plantas">
+                <img src="./img/galeria/galeria6.jpg" alt="plantas en la tienda">
+                <img src="./img/galeria/galeria7.jpg" alt="gata carey dentro de una maceta" class="main__galeria--quitar">
+                <img src="./img/galeria/galeria8.jpg" alt="plantas cerca de las ventanas" class="main__galeria--quitar">
+                <img src="./img/galeria/galeria9.jpg" alt="cajero de la tienda" class="main__galeria--quitar">
+            </section>
+        </main>
+        <footer class="footer">
+            <!-- FOOTER -->
+            <section class="footer__redesSociales">
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/footer/ig.png" alt="link Instagram"></a>
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="./img/footer/fb.png" alt="link Facebook"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="./img/footer/tw.png" alt="link Twitter"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/footer/wpp.png" alt="link Whatsapp"></a>
+            </section>
+
+            <section class="footer__logo">
+                <img src="./img/footer/logo.png" alt="logo de la tienda">
+            </section>
+            
+            <form class="footer__suscribete" id="cuponFORM">
+                <p id="suscribete--title">¡Suscríbete a nuestras noticias!</p>
+                <p id="suscribete--subtitle">consigue un 5% de descuento en tu primera compra</p>
+                <div>
+                    <input type="email" id="email-cupon" name="email" required placeholder="e-mail">
+                    <button id="btn--suscribete" type="submit">SUSCRIBETE</button>
+                </div>
+            </form>
+        </footer>
+        <!--Links de JavaScript-->
+        <script src="./scripts/newslatter.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
