@@ -6,7 +6,7 @@ let favoritos = baseDeDatosFav ? JSON.parse(baseDeDatosFav) : [];
 
 //Función asincrona
 const productos = async () => {
-    const resp = await fetch('../data/productos.json');
+    const resp = await fetch('./data/productos.json');
     const data = await resp.json();
     const nuevo = agregarIVA(data);
     mostrarProductos(nuevo, favoritos, carrito);
@@ -257,7 +257,7 @@ function filtradoPrecios(arreglo, favoritos, car) {
         let encontrado = entrePrecios(arreglo, precioInferior, precioSuperior);
         //limpiar productos antes de mostrar los nuevos resultados
         limpiarProductos();
-        mostrarProductos(encontrado, favoritos, car);      
+        mostrarProductos(encontrado, favoritos, car);
     });
 }
 
@@ -298,7 +298,7 @@ function mostrarProductos(arreglo, favoritos, car) {
 
 
     });
-    
+
 }
 
 productos()
